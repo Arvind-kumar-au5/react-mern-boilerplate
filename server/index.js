@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 app.get('/',(req,res)=>{
-    res.json("hello","how are you")
+    res.json({"hello":"how are you"})
 })
 
 app.get('/api/v0/user/auth',auth,(req,res)=>{
